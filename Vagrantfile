@@ -14,6 +14,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Forward the Jekyll server default port to the host
   config.vm.network :forwarded_port, guest: 4000, host: 4000
+  
+  if Dir.exists?("../src/")
+    config.vm.synced_folder "../src/", "/srv/src"
+  else
+    puts "Source directory not shared because it does not exist: ../src/"
+  end
 
   config.vm.provision :shell, :path => "provision/main.sh"
 end
