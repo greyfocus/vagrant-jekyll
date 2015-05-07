@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RUBY_VERSION=2.2.2
-RUBY_GEMS="jekyll coderay"
+RUBY_GEMS="jekyll coderay jekyll-sitemap"
 RVM_PATH=/usr/local/rvm
 
 # Update the version information
