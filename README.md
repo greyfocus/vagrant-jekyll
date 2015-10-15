@@ -17,14 +17,17 @@ Usage
    vagrant up
    ```
 2. SSH to the vagrant box:
+
    ```shell
    vagrant ssh
    ```
 3. Go to the shared folder that contains your Jekyll project:
+
    ```shell
    cd /srv/src/<your_jekyll_project_path>
    ```
 4. Start Jekyll:
+
    ```shell
    jekyll serve --host=0.0.0.0
    ```
