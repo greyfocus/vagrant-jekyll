@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   # Forward the Jekyll server default port to the host
-  config.vm.network :forwarded_port, guest: 4000, host: 4000
+  config.vm.network "forwarded_port", guest: 4000, host: 4000
   
   if Dir.exists?("../src/")
     config.vm.synced_folder "../src/", "/srv/src"

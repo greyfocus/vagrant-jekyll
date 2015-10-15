@@ -7,4 +7,25 @@ need to this on multiple computers.
 
 This repository contains the Vagrant configuration and provisioning in order to
 have a working Jekyll installation running on an Ubuntu based virtual machine.
- 
+
+Usage
+-----
+
+1. Start the vagrant instance:
+```bash
+vagrant up
+```
+2. SSH to the vagrant box:
+```bash
+vagrant ssh
+```
+3. Go to the shared folder that contains your Jekyll project:
+```bash
+cd /srv/src/<your_jekyll_project_path>
+```
+4. Start Jekyll:
+```bash
+jekyll serve --host=0.0.0.0
+```
+*Note:* Make sure to include the `--host=0.0.0.0` argument, otherwise you will not be able to connect to the Jekyll server from your host machine.
+
