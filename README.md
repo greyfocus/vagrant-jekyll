@@ -12,19 +12,20 @@ Usage
 -----
 
 1. Start the vagrant instance:
-   ```bash
+
+   ```shell
    vagrant up
    ```
 2. SSH to the vagrant box:
-   ```bash
+   ```shell
    vagrant ssh
    ```
 3. Go to the shared folder that contains your Jekyll project:
-   ```bash
+   ```shell
    cd /srv/src/<your_jekyll_project_path>
    ```
 4. Start Jekyll:
-   ```bash
+   ```shell
    jekyll serve --host=0.0.0.0
    ```
 
